@@ -23,15 +23,19 @@ test_set     = athletes.values_at(1000..1009); nil
 
 # get a feel for the data
 test_set.each do |row| 
-  next unless row[:height_cm] and row[:weight]
+  next unless has_features(row)
   puts "#{row[:height_cm]}, #{row[:weight]}, #{row[:sport]}" 
 end; nil
 
 
 # clean up data
+def has_features(row)
+  row[:height_cm] and row[:weight]
+end
+
 def examples_from(subset)
   examples = subset.map do |row| 
-    next unless row[:height_cm] and row[:weight]
+    next unless has_features(row)
     Libsvm::Node.features([row[:height_cm], row[:weight]])
   end
   examples = examples.compact
@@ -39,7 +43,7 @@ end
 
 def uniq_sports(subset)
   sports = subset.map do |row|
-    next unless row[:height_cm] and row[:weight]
+    next unless has_features(row)
     row[:sport]
   end
   sports = sports.compact
@@ -48,7 +52,7 @@ end
 
 def labels_from(subset, sports)
   labels = subset.map do |row|
-    next unless row[:height_cm] and row[:weight]
+    next unless has_features(row)
     sports.index(row[:sport])
   end
   labels = labels.compact
@@ -57,7 +61,7 @@ end
 def check_accuracy(actual, pred, sports)
   i = 0 
   actual.each do |row|
-    next unless row[:height_cm] and row[:weight]
+    next unless has_features(row)
     p = pred[i]
     puts "Predicted: #{sports[p]}\tActual: #{row[:sport]}\t\tHeight: #{row[:height_cm]}\tWeight: #{row[:weight]}"
     i += 1
