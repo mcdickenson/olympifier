@@ -1,4 +1,3 @@
-require 'csv'
 require 'k_means'
 
 load('data_accessor.rb')
