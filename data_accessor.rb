@@ -1,6 +1,11 @@
 require 'csv'
+require 'forwardable'
 
 class DataAccessor
+  include Enumerable
+  extend Forwardable 
+  def_delegators :@data, :first, :last, :each, :[]
+
   attr_reader :data
 
   def initialize(subset, filename=nil)
@@ -9,17 +14,8 @@ class DataAccessor
       headers: true, 
       header_converters: :symbol,
       converters: :integer).map{|r| r.to_hash}
-    @data = subset
+    @data = subset.to_a
     @features = [:height_cm, :weight]
-  end
-
-  def [](i)
-    @data.values_at(i)
-  end
-
-  # todo: delegate first and last, maybe by extending enumerable
-  def first
-    @data[0].to_hash
   end
 
   def has_features(row, *args)
