@@ -4,28 +4,24 @@ require 'forwardable'
 class DataAccessor
   include Enumerable
   extend Forwardable 
-  def_delegators :@data, :first, :last, :each, :[]
+  def_delegators :@data, :first, :last, :each, :[], :length
 
-  attr_reader :data
+  attr_reader :features, :data
 
-  def initialize(subset, filename=nil)
+  def initialize(subset, filename=nil, features=[:height_cm, :weight])
     subset ||= CSV.read(filename, 
       col_sep: "\t", 
       headers: true, 
       header_converters: :symbol,
       converters: :integer).map{|r| r.to_hash}
-    @data = subset.to_a
-    @features = [:height_cm, :weight]
-  end
-
-  def has_features(row, *args)
-    args = @features if args.empty?
-    args.flatten.all? { |i| !row[i].nil?}
+    @features = features.map{ |f| f.to_sym }
+    @data = subset.to_a.map.reject{|k, v| @features.flatten.any? { |i| k[i].nil? } }.shuffle!(random: @seed)
+    @seed = 8675309
   end
 
   def get_features(*args)
     args = @features if args.empty?
-    @data.map { |row| args.each_with_object([]){ |f, x| x << row[f] if has_features(row) }}.reject(&:empty?)
+    @data.map { |row| args.each_with_object([]){ |f, x| x << row[f] }}
   end
 
   def examples_where(opts={})
@@ -44,6 +40,11 @@ class DataAccessor
 
   def mean(*args)
     args.flatten.inject(&:+).to_f / args.flatten.length
+  end
+
+  def two_subsets(percent_in_first_subset=0.9)
+    length1 = (@data.length * percent_in_first_subset.to_f).to_i
+    [DataAccessor.new(@data[1..length1]), DataAccessor.new(@data[length1+1..-1])]
   end
   
 end

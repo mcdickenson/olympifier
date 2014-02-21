@@ -2,13 +2,36 @@ require 'k_means'
 
 load('data_accessor.rb')
 
-athletes  = DataAccessor.new nil, filename="data/athletes.tsv"
-train_set = DataAccessor.new athletes[0..999]; nil
-test_set  = DataAccessor.new athletes[1000..1009]; nil
-sports    = train_set.uniq_sports
+athletes  = DataAccessor.new nil, filename="data/athletes.tsv"; nil
+athletes.first
 
-train_examples = train_set.get_features; nil
-test_examples  = test_set.get_features; nil
+trn_set, tst_set = athletes.two_subsets; nil
+
+sports = trn_set.get_features(:sport).uniq.flatten
+
+trn_examples = trn_set.get_features; nil
+tst_examples = tst_set.get_features; nil
+
+kmeans = KMeans.new(trn_examples, centroids: sports.length)
+kmeans.nodes.size
+# kmeans.nodes
+# kmeans.centroids
+
+# todo: find the modal sport for each cluster
+
+# todo: custom centroids for each sport
+# set them on training set and use them on test set
 
 
-kmeans = KMeans.new(train_examples, centroids: sports.length)
+
+
+
+# class CustomCentroid
+#   attr_accessor :position
+#   def initialize(position); @position = position; end
+#   def reposition(nodes, centroid_positions); end
+# end
+# needs to have #position and #reposition methods
+
+# custom_centroids = []
+# 2.times { custom_centroids << CustomCentroid.new([1,1]) }
