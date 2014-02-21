@@ -3,11 +3,9 @@ require 'k_means'
 load('data_accessor.rb')
 
 athletes  = DataAccessor.new nil, filename="data/athletes.tsv"; nil
-athletes.first
-
 trn_set, tst_set = athletes.two_subsets; nil
 
-sports = trn_set.get_features(:sport).uniq.flatten
+sports = trn_set.get_features(:sport).flatten.uniq
 
 trn_examples = trn_set.get_features; nil
 tst_examples = tst_set.get_features; nil
