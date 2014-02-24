@@ -20,9 +20,7 @@ tst_assignments.each_with_index do |asn, i|
     puts "no observations classified as #{sports[i]}"
   else
     puts "#{asn.length} observations classified as #{sports[i]}"
-    # asn.each {|j| puts tst_set[j][:sport] }; nil
     actual = asn.map {|j| tst_set[j][:sport]}
-    # puts actual
     actual.uniq do |act|
       puts "\t #{actual.count(act)} are #{act}"
     end
