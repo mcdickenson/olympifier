@@ -2,29 +2,18 @@ require 'decisiontree'
 load('data_accessor.rb')
 
 
-def dtree(percent)
+def dtree(percent=0.9)
 
-  athletes  = DataAccessor.new nil, filename="data/athletes.tsv"; nil
-  trn_set, tst_set = athletes.two_subsets; nil
+  athletes  = DataAccessor.new nil, filename="data/athletes.tsv", features=[:height_cm, :weight, :sport]
+  trn_set, tst_set = athletes.two_subsets
 
-  attributes = ['height', 'weight']
-  trn_examples = trn_set.get_features(:height_cm, :weight, :sport)
-  tst_examples = tst_set.get_features(:height_cm, :weight, :sport)
+  trn_examples, tst_examples = trn_set.get_features, tst_set.get_features
 
+  dtree = DecisionTree::ID3Tree.new ['height', 'weight'], trn_examples, "Athletics", :discrete
+  dtree.train
 
-  dtree = DecisionTree::ID3Tree.new attributes, trn_examples, "Athletics", :discrete
-
-  start = Time.now
-  dtree.train; nil
-  t = Time.now-start
-
-  tst_classes = []
-  pred_labels = []
-  tst_examples.each do |tst|
-    tst_classes << tst.last
-    pred_labels << dtree.predict(tst)
-  end
+  tst_classes = tst_examples.map{|x| x.last}
+  pred_labels = tst_examples.each_with_object([]) { |t,a| a << dtree.predict(t) }
 
   acc = tst_set.check_accuracy(pred_labels, tst_classes)
-  {time: t, accuracy: acc}
 end
