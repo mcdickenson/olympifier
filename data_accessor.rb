@@ -42,6 +42,14 @@ class DataAccessor
     args.flatten.inject(&:+).to_f / args.flatten.length
   end
 
+  def feature_means_by(target, *args)
+    args = @features if args.empty?
+    get_features(target).flatten.uniq.each_with_object({}) do |t, hsh|
+      tx = DataAccessor.new examples_where({target => t})
+      hsh[t] = args.each_with_object({}) { |a, hsh| hsh[a] = tx.mean(tx.get_features(a)) }
+    end
+  end
+
   def two_subsets(percent_in_first_subset=0.9)
     length1 = (@data.length * percent_in_first_subset.to_f).to_i
     [DataAccessor.new(@data[1..length1]), DataAccessor.new(@data[length1+1..-1])]
