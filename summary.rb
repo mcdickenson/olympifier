@@ -9,7 +9,7 @@ n = 10
 CSV.open("summary.csv", "w") do |csv|
   csv << ["method", "time", "accuracy"]
   ["dtree", "kmeans", "svm"].each do |meth|
-    (1..9).map{|x| x.to_f/10} do |p|
+    (1..9).map{|x| x.to_f/10}.each do |p|
       cmd = "#{meth}(#{p})"
       puts cmd
       n.times do 
