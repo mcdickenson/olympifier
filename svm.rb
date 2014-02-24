@@ -27,10 +27,8 @@ problem.set_examples(trn_labels, trn_examples)
 model = Libsvm::Model.train(problem, parameter) # takes a little while
 
 # test model 
-pred = test_examples.map {|x| model.predict(x) }
+pred = tst_examples.map {|x| model.predict(x) }
 pred_labels = pred.map{|x| sports[x]}
 
-test_set.check_accuracy(pred_labels, test_labels)
+tst_set.check_accuracy(pred_labels, tst_classes)
 
-# todo: incorporate gender, age
-# todo: rename to distinguish between 'labels' and 'classes'
