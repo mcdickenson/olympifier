@@ -10,8 +10,12 @@ sports = trn_set.get_features(:sport).flatten.uniq
 trn_examples = trn_set.get_features; nil
 tst_examples = tst_set.get_features; nil
 
+start = Time.now
 trn_kmeans = KMeans.new(trn_examples, centroids: sports.length)
+puts "training kmeans on #{trn_set.length} examples took #{Time.now-start} seconds"
+
 tst_kmeans = KMeans.new(tst_examples, custom_centroids: trn_kmeans.centroids)
+
 
 tst_assignments = tst_kmeans.instance_variable_get :@centroid_pockets
 
@@ -24,4 +28,6 @@ tst_assignments.each_with_index do |asn, i|
     tst_classes << tst_set[j][:sport]
   end
 end; nil
-tst_set.check_accuracy(pred_labels, tst_classes)
+acc = tst_set.check_accuracy(pred_labels, tst_classes)
+
+puts "kmeans accuracy rate on #{tst_set.length} examples is #{acc}"
