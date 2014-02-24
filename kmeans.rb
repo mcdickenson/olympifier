@@ -1,32 +1,18 @@
 require 'k_means'
 load('data_accessor.rb')
 
-def kmeans(percent)
-  athletes  = DataAccessor.new nil, filename="data/athletes.tsv"; nil
-  trn_set, tst_set = athletes.two_subsets; nil
+def kmeans(percent=0.9)
+  athletes  = DataAccessor.new nil, filename="data/athletes.tsv"
+  trn_set, tst_set = athletes.two_subsets
 
   sports = trn_set.get_features(:sport).flatten.uniq
 
-  trn_examples = trn_set.get_features; nil
-  tst_examples = tst_set.get_features; nil
+  trn_examples, tst_examples = trn_set.get_features, tst_set.get_features
 
-  start = Time.now
   trn_kmeans = KMeans.new(trn_examples, centroids: sports.length)
-  t = Time.now-start
-
   tst_kmeans = KMeans.new(tst_examples, custom_centroids: trn_kmeans.centroids)
   tst_assignments = tst_kmeans.instance_variable_get :@centroid_pockets
 
-  tst_classes = []
-  pred_labels = []
-
-  tst_assignments.each_with_index do |asn, i|
-    asn.each do |j|
-      pred_labels << sports[i]
-      tst_classes << tst_set[j][:sport]
-    end
-  end; nil
-  acc = tst_set.check_accuracy(pred_labels, tst_classes)
-
-  {time: t, accuracy: acc}
+  pred_labels = tst_assignments.each_with_index.with_object([]) { |(asn, i), labs|  asn.each { |j| labs << sports[i] } }
+  acc = tst_set.check_accuracy(pred_labels)
 end

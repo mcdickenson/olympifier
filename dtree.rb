@@ -3,7 +3,6 @@ load('data_accessor.rb')
 
 
 def dtree(percent=0.9)
-
   athletes  = DataAccessor.new nil, filename="data/athletes.tsv", features=[:height_cm, :weight, :sport]
   trn_set, tst_set = athletes.two_subsets
 

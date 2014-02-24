@@ -8,13 +8,14 @@ class DataAccessor
 
   attr_reader :features, :data
 
-  def initialize(subset, filename=nil, features=[:height_cm, :weight])
+  def initialize(subset, filename=nil, features=[:height_cm, :weight], target=:sport)
     subset ||= CSV.read(filename, 
       col_sep: "\t", 
       headers: true, 
       header_converters: :symbol,
       converters: :integer).map{|r| r.to_hash}
     @features = features.map{ |f| f.to_sym }
+    @target = target.to_sym
     @data = subset.to_a.map.reject{|k, v| @features.flatten.any? { |i| k[i].nil? } }.shuffle!(random: @seed)
     @seed = 8675309
   end
@@ -28,14 +29,11 @@ class DataAccessor
     @data.map { |row| row if opts.keys.all? {|k| row[k] == opts[k]} }.reject(&:nil?)
   end
 
-  def check_accuracy(pred, actual)
+  def check_accuracy(pred, actual=get_features(@target).flatten)
+    raise unless actual.length == pred.length
     accurate = 0 
-    total = 0 
-    pred.each_with_index do |p, i|
-      accurate += 1 if actual[i] == p
-      total += 1
-    end
-    accurate.to_f / total
+    pred.each_with_index { |p, i| accurate += 1 if actual[i] == p }
+    accurate.to_f / actual.length
   end
 
   def mean(*args)
