@@ -8,7 +8,7 @@ class DataAccessor
 
   attr_reader :features, :data
 
-  def initialize(subset, filename=nil, features=[:height_cm, :weight], target=:sport)
+  def initialize(subset, filename=nil, features=[:height_cm, :weight, :sex, :age], target=:sport)
     subset ||= CSV.read(filename, 
       col_sep: "\t", 
       headers: true, 

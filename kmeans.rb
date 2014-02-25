@@ -3,7 +3,7 @@ load('data_accessor.rb')
 
 def kmeans(percent=0.9)
   athletes  = DataAccessor.new nil, filename="data/athletes.tsv"
-  trn_set, tst_set = athletes.two_subsets
+  trn_set, tst_set = athletes.two_subsets(percent_in_first_subset=percent)
 
   sports = trn_set.get_features(:sport).flatten.uniq
 

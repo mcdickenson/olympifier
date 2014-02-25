@@ -2,8 +2,8 @@ require 'libsvm'
 load('data_accessor.rb')
 
 def svm(percent)
-  athletes  = DataAccessor.new nil, filename="data/athletes.tsv"
-  trn_set, tst_set = athletes.two_subsets(percent_in_first_subset=0.05)
+  athletes  = DataAccessor.new nil, filename="data/athletes.tsv";nil
+  trn_set, tst_set = athletes.two_subsets(percent_in_first_subset=percent)
 
   sports = trn_set.get_features(:sport).flatten.uniq
 
