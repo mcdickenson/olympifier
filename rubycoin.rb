@@ -32,12 +32,12 @@ Distribution::Beta.pdf(0.51, 5, 5)
 
 # set prior
 a = b = 5
-# a = b = 100
+a = b = 100
 heads = tails = 0
 nflips = 3
-# nflips = 1000
+nflips = 1000
 
-# pi = 0.5
+pi = 0.5
 pi = rand; nil
 
 for flip in 1..nflips
