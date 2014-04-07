@@ -22,7 +22,10 @@ target = "Sport"
 
 
 hcVVVathletes = hc(modelName="VVV", data=athletes[, features])
-
+# summary(hcVVVathletes) # takes forever!
+# cl = hclass(hcVVVathletes)
+save(hcVVVathletes, file="rcode/hcVVVathletes.rda")
+# save(cl, file="rcode/cl.rda")
 
 # hcVVViris <- hc(modelName = "VVV", data = iris[,-5])
 # cl <- hclass(hcVVViris, 2:3)
