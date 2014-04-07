@@ -87,6 +87,6 @@ legend("left",
 )
 dev.off()
 
-
+write.csv(athletes, file="data/athletes-mod.csv", row.names=FALSE)
 
 
