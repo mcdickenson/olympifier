@@ -21,10 +21,13 @@ target = "Sport"
 # summary(mclust) # optimal model according to BIC
 
 
-hcVVVathletes = hc(modelName="VVV", data=athletes[, features])
+# hcVVVathletes = hc(modelName="VVV", data=athletes[, features])
+# save(hcVVVathletes, file="rcode/hcVVVathletes.rda")
+load("rcode/hcVVVathletes.rda")
+plot(hcVVVathletes)
 # summary(hcVVVathletes) # takes forever!
-# cl = hclass(hcVVVathletes)
-save(hcVVVathletes, file="rcode/hcVVVathletes.rda")
+
+cl = hclass(hcVVVathletes)
 # save(cl, file="rcode/cl.rda")
 
 # hcVVViris <- hc(modelName = "VVV", data = iris[,-5])
