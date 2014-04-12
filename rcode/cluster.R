@@ -16,7 +16,7 @@ colors = rep(brewer.pal(7,"Set1"),times=4)
 
 ########################################
 # pick which putcome we want to analyze
-MODE = "SPORT"
+# MODE = "SPORT"
 MODE = "EVENT"
 ########################################
 
@@ -44,6 +44,7 @@ mclust = Mclust(data, G=g, modelNames=models)
 summary(mclust) # optimal model according to BIC
 # VII does well
 
+as.character(g)
 # VVV
 hcVVVathletes = hc(modelName="VVV", data=data)
 clVVV = hclass(hcVVVathletes, clusterCounts)
@@ -58,7 +59,6 @@ hcVIIathletes = hc(modelName="VII", data=data)
 clVII = hclass(hcVIIathletes, clusterCounts)
 classError(clVII[,as.character(g)], truth=athletes[, target])
 clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
-
 
 # plots
 if(MODE=="SPORT"){
