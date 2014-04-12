@@ -61,7 +61,6 @@ hcVIIathletes = hc(modelName="VII", data=data)
 clVII = hclass(hcVIIathletes, clusterCounts)
 classError(clVII[,as.character(g)], truth=athletes[, target])
 clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
-clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
 
 # plots
 pdf("graphics/clVVV-sport.pdf")
