@@ -10,6 +10,7 @@ colnames(athletes)[6] = "Female"
 # collapse a couple of narrow categories 
 athletes$Sport = ifelse(grepl("Cycling", athletes$Sport), "Cycling", athletes$Sport)
 athletes$Sport = ifelse(grepl("Athletics", athletes$Sport), "Athletics", athletes$Sport)
+# length(which(grepl("Athletics", athletes$Sport)))
 # sort(unique(athletes$Sport))
 # sort(unique(athletes$Event))
 # todo: may need to remove/collapse dressage (has horse names)
@@ -45,7 +46,7 @@ nums = rep(1:10, times=1000)
 set.seed(123)
 kfold = matrix(NA, nrow=10000, ncol=10)
 for(i in 1:10){
-  kfold[,i] = sample(chars)
+  kfold[,i] = sample(nums)
 }
 colnames(kfold) = paste("kfold", 1:10, sep="")
 athletes = cbind(athletes, kfold[1:nrow(athletes),])
