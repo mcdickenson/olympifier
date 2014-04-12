@@ -82,6 +82,3 @@ if(MODE=="SPORT"){
 
 # results:
 # hcVII does at least as well as hcVVV
-# classifying sports has a .00 error rate for 25 clusters 
-# classifying events has a .819 error rate for 714 clusters
-# size of true clusters highly unequal: 66 pentathlon vs 1901 athletics
