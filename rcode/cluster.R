@@ -1,4 +1,5 @@
 # set up workspace
+rm(list=ls())
 setwd('~/github/olympifier')
 # install.packages('mclust', repo='http://cran.revolutionanalytics.com/')
 library(mclust)
@@ -6,78 +7,77 @@ library(RColorBrewer)
 
 
 # load data
-athletes = read.csv('data/athletes-mod.csv', header=TRUE, as.is=TRUE)
+athletes = read.csv('data/athletes-clean.csv', header=TRUE, as.is=TRUE)
 dim(athletes)
 head(athletes)
-class(athletes$Female)
 athletes$sport.factor = as.factor(athletes$Sport)
-athletes$event.factor = as.factor(athletes$Event)
+athletes$event.factor = as.factor(athletes$FirstEvent)
 colors = rep(brewer.pal(7,"Set1"),times=4)
 
 
 # set features and target
 features = c("Age", "Height", "Weight", "Female")
-# target = "Sport"
-# target = "Event"
-target = "event.factor"
-# todo: may need to exclude "(Other)"
-# todo: may need some add'l cleanups (dressage, etc)
+target = "sport.factor"
+# target = "event.factor"
 
-want = which(athletes$kfold1!=0)
+# for classifying sport:
+want = which(athletes$kfold==1 & athletes$Sport != "Athletics")
+#
 data = athletes[want, features]
 dim(data)
 g = length(unique(athletes[want, target]))
+g
 
 # check model
-
 # mclust
-clusterCounts = c(20:30, 700:750)
+clusterCounts = c(1:30)
+# clusterCounts = c(20:30, 200:300)
 # ?Mclust
 models = c("EII", "VII", "EEE", "VVV")
 # athletesBIC <- mclustBIC(athletes)
 mclust = Mclust(data, G=g, modelNames=models)
 summary(mclust) # optimal model according to BIC
-# VII does well for classifying sports
+# VII does well
 
 # VVV
-# hcVVVathletes = hc(modelName="VVV", data=athletes[, features])
+hcVVVathletes = hc(modelName="VVV", data=data)
 # save(hcVVVathletes, file="rcode/hcVVVathletes.rda")
-load("rcode/hcVVVathletes.rda")
+# load("rcode/hcVVVathletes.rda")
 # summary(hcVVVathletes) # takes forever!
 clVVV = hclass(hcVVVathletes, clusterCounts)
+dim(clVVV)
 # save(clVVV, file="rcode/clVVV.rda")
-classError(clVVV[,"27"], truth=athletes[, target])  # sport
-classError(clVVV[,"714"], truth=athletes[, target]) # event
-clPairs(data=athletes[,features], classification=clVVV[,"27"], colors=colors)
-clPairs(data=athletes[,features], classification=clVVV[,"714"], colors=colors)
+classError(clVVV[,"2"], truth=athletes[, target])
+classError(clVVV[,"30"], truth=athletes[, target])
+classError(clVVV[,as.character(g)], truth=athletes[, target])
+clPairs(data=athletes[,features], classification=clVVV[,as.character(g)], colors=colors)
+# no errors for sport
 
 # VII
-# hcVIIathletes = hc(modelName="VII", data=data)
+hcVIIathletes = hc(modelName="VII", data=data)
 # save(hcVIIathletes, file="rcode/hcVIIathletes.rda")
-load("rcode/hcVIIathletes.rda")
+# load("rcode/hcVIIathletes.rda")
 # summary(hcVIIathletes) # takes forever!
 clVII = hclass(hcVIIathletes, clusterCounts)
-classError(clVII[,"27"], truth=athletes[, target])  # sport
-classError(clVII[,"714"], truth=athletes[, target]) # event
-clPairs(data=athletes[,features], classification=clVII[,"27"], colors=colors)
-clPairs(data=athletes[,features], classification=clVII[,"714"], colors=colors)
-
+classError(clVII[,as.character(g)], truth=athletes[, target])
+clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
+clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
 
 # plots
-pdf("clVVV-sport.pdf")
-clPairs(data=athletes[,features], classification=clVVV[,"27"], colors=colors)
+pdf("graphics/clVVV-sport.pdf")
+clPairs(data=athletes[,features], classification=clVVV[,as.character(g)], colors=colors)
 dev.off()
 
-pdf("clVVV-event.pdf")
-clPairs(data=athletes[,features], classification=clVVV[,"714"], colors=colors)
+pdf("graphics/clVVV-event.pdf")
+clPairs(data=athletes[,features], classification=clVVV[,as.character(g)], colors=colors)
 dev.off()
 
-pdf("clVII-sport.pdf")
-clPairs(data=athletes[,features], classification=clVII[,"27"], colors=colors)
+pdf("graphics/clVII-sport.pdf")
+clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
 dev.off()
 
-pdf("clVII-event.pdf")
-clPairs(data=athletes[,features], classification=clVII[,"714"], colors=colors)
+pdf("graphics/clVII-event.pdf")
+clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
 dev.off()
 
 # results:
