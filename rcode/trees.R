@@ -1,18 +1,18 @@
 # set up workspace
 rm(list=ls())
 setwd('~/github/olympifier')
-library(cluster)
+# library(cluster)
 # install.packages('evtree', repo='http://cran.revolutionanalytics.com/')
 library(evtree)
 # install.packages('maptree', repo='http://cran.revolutionanalytics.com/')
-library(maptree)
+# library(maptree)
 # install.packages('oblique.tree', repo='http://cran.revolutionanalytics.com/')
-library(oblique.tree)
+# library(oblique.tree)
 library(party)
-library(RColorBrewer)
+# library(RColorBrewer)
 library(randomForest)
-library(rpart)
-library(tree)
+# library(rpart)
+# library(tree)
 
 
 # load data
@@ -25,54 +25,67 @@ athletes$event.factor = as.factor(athletes$FirstEvent)
 length(unique(athletes$sport.factor))
 sort(unique(athletes$sport.factor))
 
-
 # set up training and test sets
 features = c("Age", "Height", "Weight", "Female")
 target = "sport.factor"
 summary(athletes$kfold)
-trnData = athletes[athletes$kfold <= 5, c(features, target)]
+trnData = athletes[athletes$kfold <= 5, features]
 tstData = athletes[athletes$kfold >  5, features]
-# trnClass = athletes[athletes$kfold <= 5, target]
-# tstClass = athletes[athletes$kfold >  5, target]
+trnClass = athletes[athletes$kfold <= 5, target]
+tstClass = athletes[athletes$kfold >  5, target]
 dim(trnData)
 formula = sport.factor ~ Age + Height + Weight + Female
 
-# tree
-tr = tree(formula, data=trnData)
-summary(tr)
-plot(tr)
-text(tr)
-
-# rpart
-fit = rpart(formula, method="class", data=trnData)
-printcp(fit)
-plot(fit, uniform=TRUE)
-text(fit, use.n=TRUE, all=TRUE, cex=0.8)
-
 # party
-(ct = ctree(formula, data=trnData))
-plot(ct, main="Conditional Inference Tree")
-# todo: prune this so the output is less ugly
-# don't want p-values (if that's what they are)
-table(predict(ct), trnData$sport.factor)
-# todo: this would make a nice heatmap
-tr.pred = predict(ct, newdata=tstData, type="prob")
+data = cbind(trnData, trnClass)
+names(data)[5] = target
 
-# maptree
-draw.tree(clip.rpart(rpart(trnData), best=7),
-  nodeinfo=TRUE, units="sports",
-  cases="athletes", digits=0)
+sportCIT = ctree(formula, data=data )
+save(sportCIT, file="rcode/sportCIT.rda")
+load("rcode/sportCIT.rda")
+
+# training set
+trnPred = predict(sportCIT)
+table(trnPred, trnClass)
+1-mean(trnPred == trnClass)
+
+# test set
+tstPred = predict(sportCIT, newdata=tstData)
+table(tstPred, tstClass)
+1-mean(tstPred == tstClass)
+
 
 # evtree
-ev = evtree(formula, data=trnData)
-plot(ev)
-table(predict(ev), trnData$sport.factor)
-1-mean(predict(ev)==trnData$sport.factor)
-# todo: needs some pruning
-# about 30% accuracy
+sportEV = evtree(formula, data=data)
+save(sportEV, file="rcode/sportEV.rda")
+load("rcode/sportEV.rda")
+
+trnPred = predict(sportEV, trnData)
+table(trnPred, trnClass)
+1-mean(trnPred == trnClass)
+
+tstPred = predict(sportEV, tstData)
+table(tstPred, tstClass)
+1-mean(tstPred == tstClass)
 
 # randomForest
-fit.rf = randomForest(formula, data=trnData)
+fit.rf = randomForest(formula, data=data)
+sportRF = fit.rf
+
+sportRF = randomForest(formula, data=data)
+save(sportRF, file="rcode/sportRF.rda")
+load("rcode/sportRF.rda")
+
+trnPred = predict(sportRF, trnData)
+table(trnPred, trnClass)
+1-mean(trnPred == trnClass)
+
+tstPred = predict(sportRF, tstData)
+table(tstPred, tstClass)
+1-mean(tstPred == tstClass)
+
+
+
 
 print(fit.rf)
 # this could be interesting: which sports are easy to detect?
