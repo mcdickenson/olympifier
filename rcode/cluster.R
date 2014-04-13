@@ -10,54 +10,48 @@ library(RColorBrewer)
 athletes = read.csv('data/athletes-clean.csv', header=TRUE, as.is=TRUE)
 dim(athletes)
 head(athletes)
+athletes = athletes[-which(athletes$Sport=="Athletics"),]
 athletes$sport.factor = as.factor(athletes$Sport)
 athletes$event.factor = as.factor(athletes$FirstEvent)
-colors = rep(brewer.pal(7,"Set1"),times=4)
+length(unique(athletes$sport.factor))
+sort(unique(athletes$sport.factor))
 
-########################################
-# pick which putcome we want to analyze
-# MODE = "SPORT"
-MODE = "EVENT"
-########################################
 
-# set features and target
+# set up training and test sets
 features = c("Age", "Height", "Weight", "Female")
+target = "sport.factor"
+summary(athletes$kfold)
+trnData = athletes[athletes$kfold <= 5, features]
+tstData = athletes[athletes$kfold >  5, features]
+trnClass = athletes[athletes$kfold <= 5, target]
+tstClass = athletes[athletes$kfold >  5, target]
+dim(trnData)
+formula = sport.factor ~ Age + Height + Weight + Female
 
-if(MODE=="SPORT"){
-  target = "sport.factor"
-  want = which(athletes$kfold==1 & athletes$Sport != "Athletics")
-  clusterCounts = c(1:30)
-} else {
-  target = "event.factor"
-  want = which(athletes$kfold==1)
-  clusterCounts = c(20:30, 200:300)
-}
-
-data = athletes[want, features]
-dim(data)
-g = length(unique(athletes[want, target]))
-g
+g = length(unique(tstClass))
+clusterCounts = g
 
 # check model
 models = c("EII", "VII", "EEE", "VVV")
-mclust = Mclust(data, G=g, modelNames=models)
+mclust = Mclust(trnData, G=g, modelNames=models)
 summary(mclust) # optimal model according to BIC
 # VII does well
 
 as.character(g)
 # VVV
-hcVVVathletes = hc(modelName="VVV", data=data)
+hcVVVathletes = hc(modelName="VVV", data=trnData)
 clVVV = hclass(hcVVVathletes, clusterCounts)
 # classError(clVVV[,"2"], truth=athletes[, target])
 # classError(clVVV[,"30"], truth=athletes[, target])
-classError(clVVV[,as.character(g)], truth=athletes[want, target])
-clPairs(data=athletes[,features], classification=clVVV[,as.character(g)], colors=colors)
+classError(clVVV[,as.character(g)], truth=trnClass)
+# clPairs(data=trnData, classification=clVVV[,as.character(g)] )
 # no errors for sport
+hcVVVpred = predict(hcVVVathletes, )
 
 # VII
-hcVIIathletes = hc(modelName="VII", data=data)
+hcVIIathletes = hc(modelName="VII", data=trnData)
 clVII = hclass(hcVIIathletes, clusterCounts)
-classError(clVII[,as.character(g)], truth=athletes[, target])
+classError(clVII[,as.character(g)], truth=trnClass)
 clPairs(data=athletes[,features], classification=clVII[,as.character(g)], colors=colors)
 
 # plots
