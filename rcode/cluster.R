@@ -50,7 +50,7 @@ hcVVVathletes = hc(modelName="VVV", data=data)
 clVVV = hclass(hcVVVathletes, clusterCounts)
 # classError(clVVV[,"2"], truth=athletes[, target])
 # classError(clVVV[,"30"], truth=athletes[, target])
-classError(clVVV[,as.character(g)], truth=athletes[, target])
+classError(clVVV[,as.character(g)], truth=athletes[want, target])
 clPairs(data=athletes[,features], classification=clVVV[,as.character(g)], colors=colors)
 # no errors for sport
 
