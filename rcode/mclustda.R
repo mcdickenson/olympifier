@@ -16,7 +16,7 @@ athletes$event.factor = as.factor(athletes$FirstEvent)
 length(unique(athletes$sport.factor))
 
 
-# set up models
+# set up training and test sets
 features = c("Age", "Height", "Weight", "Female")
 target = "sport.factor"
 summary(athletes$kfold)
@@ -25,7 +25,7 @@ tstData = athletes[athletes$kfold >  5, features]
 trnClass = athletes[athletes$kfold <= 5, target]
 tstClass = athletes[athletes$kfold >  5, target]
 dim(trnData)
-dim(tstData)
+formula = sport.factor ~ Age + Height + Weight + Female
 
 # find best model
 models = c("EII", "VII", "EEE", "VVV", "VEV")
@@ -42,38 +42,20 @@ for(i in seq(models)){
   tab[i,3] = classError(pred$classification, tstClass)$errorRate
 }
 tab
+# best: "VEV"
 
-# try again
-sport.mclust = Mclust(trnData)
-summary(sport.mclust)
-summary(sport.mclust, parameters=TRUE)
-plot(sport.mclust)
+sportMclust = MclustDA(trnData, trnClass,
+  modelType="MclustDA",
+  modelNames="VEV")
+save(sportMclust, file="rcode/sportMclust.rda")
+load("rcode/sportMclust.rda")
 
-plot.new()
-dev.off()
+# training set prediction
+trnPred = predict(sportMclust, trnData, type="class")$classification
+table(trnPred, trnClass)
+1-mean(trnPred == trnClass)
 
-# try again
-sportBIC = mclustBIC(trnData)
-plot(sportBIC, legendArgs=list(x="topleft"))
-sportBIC = mclustBIC(trnData, G=1:30)
-summary(sportBIC, trnData)
-
-sportModel = summary(sportBIC, data=trnData)
-sportModel
-
-# try again
-defaultPrior(trnData, G=26, modelName="VII")
-sportBICprior = mclustBIC(trnData, prior=priorControl())
-
-
-# try with noise
-set.seed(0)
-sportNoiseInit = sample(c(TRUE, FALSE), 
-  size=nrow(trnData),
-  replace=TRUE,
-  prob=c(1,1)
-)
-sportNbic = mclustBIC(trnData,
-  initialization=list(noise=sportNoiseInit))
-sportNsummary = summary(sportNbic, trnData)
-sportNsummary
+# test set predictions
+tstPred = predict(sportMclust, tstData, type="class")$classification
+table(tstPred, tstClass)
+1-mean(tstPred == tstClass)
