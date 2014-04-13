@@ -10,6 +10,7 @@ library(RColorBrewer)
 athletes = read.csv('data/athletes-clean.csv', header=TRUE, as.is=TRUE)
 dim(athletes)
 head(athletes)
+athletes = athletes[-which(athletes$Sport=="Athletics"),]
 athletes$sport.factor = as.factor(athletes$Sport)
 athletes$event.factor = as.factor(athletes$FirstEvent)
 length(unique(athletes$sport.factor))
