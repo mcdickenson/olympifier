@@ -32,6 +32,7 @@ tstClass = athletes[athletes$kfold >  5, target]
 formula = sport.factor ~ Age + Height + Weight + Female
 data = cbind(trnData, trnClass)
 
+models = c("sportMclust", "sportCIT", "sportEV", "sportRF", "sportANN")
 
 ################################
 # hc/mclust
