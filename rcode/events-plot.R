@@ -45,14 +45,24 @@ source("~/github/cs590ml/poster/heatmapNew.R")
 colfunc = colorRampPalette(c("white", "steelblue"))
 myHeatmap = function(matrix){
 
+  # todo: gsub "Men's" and "Women's" in rownames and colnames
+  rnames = rownames(matrix)
+  cnames = colnames(matrix)
+  rnames2 = gsub("Men's", "M", rnames)
+  rnames2 = gsub("Women's", "W", rnames2)
+  cnames2 = gsub("Men's", "M", cnames)
+  cnames2 = gsub("Women's", "W", cnames2)
+  rownames(matrix) = rnames2
+  colnames(matrix) = cnames2
+
   heatmapNew(matrix[nrow(matrix):1,], Rowv=NA, Colv=NA,
     col=colfunc(100), 
     cexRow = 0.3 + 1/log10(nrow(matrix)),
-    cexCol = 0.3 + 1/log10(ncol(matrix)),
+    cexCol = 0.1 + 1/log10(ncol(matrix)),
     scale="row",
     xlab="Predicted Event",
     ylab="Actual Event",
-    margins=c(10,1,10)
+    margins=c(7,1,10)
   )
 }
 # athletesANNmatrix
@@ -104,6 +114,9 @@ modelCheck = function(mname){
   rat = acc2/acc1
   cat("\tRatio:", rat, "\n")
 }
+
+?heatmap
+source("~/github/cs590ml/poster/heatmapNew.R")
 
 for(m in models){
   modelCheck(m)
