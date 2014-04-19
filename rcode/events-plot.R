@@ -115,14 +115,9 @@ modelCheck = function(mname){
   cat("\tRatio:", rat, "\n")
 }
 
-?heatmap
-source("~/github/cs590ml/poster/heatmapNew.R")
-
 for(m in models){
   modelCheck(m)
 }
 
-# todo: adjust heatmap to account for longer event names
-# todo: or relabel "Men's" to "M" and "Women's" to "W"
 
 

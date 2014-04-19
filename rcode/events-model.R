@@ -34,6 +34,8 @@ formula = event.factor ~ Age + Height + Weight + Female
 data = cbind(trnData, trnClass)
 colnames(data)[5] = target
 # run models
+dim(trnData)
+dim(tstData)
 
 ################################
 # hierarchical clustering
