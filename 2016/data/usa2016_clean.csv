@@ -1,0 +1,553 @@
+sport,name,gender,height,weight,dob
+archery,Brady Ellison,M,5-11,190,10/27/1988
+archery,Zach Garrett,M,5-10,140,4/8/1995
+archery,Jake Kaminski,M,,158,
+archery,Mackenzie Brown,W,5-11,165,3/14/1995
+badminton,Phillip Chew,M,5-8,200,5/16/1994
+badminton,Sattawat Pongnairat,M,5-11,155,5/8/1990
+badminton,Howard Shu,M,6-1,165,11/28/1990
+badminton,Eva Lee,W,5-6,130,8/7/1986
+badminton,Paula Lynn Obanana,W,5-3,128,3/19/1985
+badminton,Jamie Subandhi,W,5-4,128,12/15/1989
+badminton,Iris Wang,W,5-3,115,9/2/1994
+basketball,Carmelo Anthony,M,6-8,230,5/29/1984
+basketball,Harrison Barnes,M,6-8,225,5/30/1992
+basketball,Jimmy Butler,M,6-7,220,9/14/1989
+basketball,DeMarcus Cousins,M,6-11,270,8/13/1990
+basketball,DeMar DeRozan,M,6-7,220,8/7/1989
+basketball,Kevin Durant,M,6-9,230,9/29/1988
+basketball,Paul George,M,6-9,220,5/2/1990
+basketball,Draymond Green,M,6-7,,
+basketball,Kyrie Irving,M,6-3,193,3/23/1992
+basketball,DeAndre Jordan,M,6-11,265,7/21/1988
+basketball,Kyle Lowry,M,6-0,250,3/25/1986
+basketball,Klay Thompson,M,,,
+basketball,Seimone Augustus,W,6-1,165,4/30/1984
+basketball,Sue Bird,W,5-9,147,10/16/1980
+basketball,Tamika Catchings,W,6-2,170,7/21/1979
+basketball,Tina Charles,W,6-3,195,12/5/1988
+basketball,Elena Delle Donne,W,6-5,190,9/5/1989
+basketball,Sylvia Fowles,W,6-6,200,10/6/1985
+basketball,Brittney Griner,W,6-8,208,10/18/1990
+basketball,Angel McCoughtry,W,6-1,155,9/10/1986
+basketball,Maya Moore,W,6-0,175,6/11/1989
+basketball,Breanna Stewart,W,6-4,175,8/27/1994
+basketball,Diana Taurasi,W,6-0,155,6/11/1982
+basketball,Lindsay Whalen,W,5-9,160,5/9/1982
+boxing,Carlos Balderas, Jr.,M,5-9,132,8/24/1996
+boxing,Charles Conwell,M,5-9,165,11/2/1997
+boxing,Nico Hernandez,M,5-5,108,1/4/1996
+boxing,Gary Russell,M,5-8,141,6/14/1996
+boxing,Shakur Stevenson,M,5-8,123,6/28/1997
+boxing,Antonio Vargas,M,5-6,114,8/15/1996
+boxing,Mikaela Mayer,W,5-9,132,7/4/1990
+boxing,Claressa Shields,W,5-9,165,3/17/1995
+canoe kayak,Casey Eichfeld,M,5-10,170,11/15/1989
+canoe kayak,Devin McEwan,M,5-10,170,10/11/1984
+canoe kayak,Michal Smolen,M,5-11,155,9/13/1993
+canoe kayak,Ashley Nee,W,5-4,120,6/15/1989
+canoe kayak,Maggie Hogan,W,5-7,135,1/1/1979
+cycling,Connor Fields,M,6-0,195,9/14/1992
+cycling,Nic Long,M,6-2,190,10/6/1989
+cycling,Alise Post,M,5-2,125,1/17/1991
+cycling,Brooke Crain,M,5-4,123,4/29/1993
+cycling,Howard Grotts,W,5-7,130,1/12/1993
+cycling,Lea Davison,M,5-6,122,5/19/1983
+cycling,Chloe Woodruff ,M,5-2,113,7/21/1987
+cycling,Matt Baranoski,W,6-0,212,7/27/1993
+cycling,Bobby Lea,W,6-2,170,10/17/1983
+cycling,Brent Bookwalter,W,5-11,150,2/16/1984
+cycling,Taylor Phinney,W,6-5,180,6/27/1990
+cycling,Kelly Catlin,W,5-6,140,11/3/1995
+cycling,Sarah Hammer,W,5-7,145,8/18/1983
+cycling,Chloe Dygert,W,5-9,147,1/1/1997
+cycling,Jennifer Valente,W,5-9,165,12/24/1994
+cycling,Ruth Winder,W,5-4,127,7/9/1993
+cycling,Megan Guarnier,W,5-4,120,
+cycling,Mara Abbott,W,5-4,115,
+cycling,Kristin Armstrong,W,5-8,128,
+cycling,Evelyn Stevens,W,,123,
+diving,David Boudia,M,,,
+diving,Sam Dorman,M,5-9,170,8/30/1991
+diving,Michael Hixon,M,5-8,150,7/16/1994
+diving,Kristian Ipsen ,M,5-7,160,10/20/1992
+diving,Steele Johnson,M,6-2,175,6/16/1996
+diving,Kassidy Cook,W,,125,5/9/1995
+diving,Amy Cozad,W,5-3,113,5/6/1991
+diving,Abby Johnston,W,5-5,135,11/16/1989
+diving,Jessica Parratto,W,5-2,112,6/26/1994
+diving,Katrina Young,W,5-4,132,1/10/1992
+equestrian,Phillip Dutton,M,5-6,150,9/13/1963
+equestrian,Boyd Martin,M,6-2,175,8/20/1979
+equestrian,Clark Montgomery,M,6-0,155,5/20/1981
+equestrian,Lauren Kieffer,W,5-10,150,6/6/1987
+equestrian,Kent Farrington,M,5-8,145,12/28/1980
+equestrian,McLain Ward,M,5-8,160,10/17/1975
+equestrian,Lucy Davis,W,,122,10/22/1992
+equestrian,Beezie Madden,W,5-6,140,11/20/1963
+equestrian,Steffen Peters,M,5-8,150,9/18/1964
+equestrian,Allison Brock ,W,5-6,,12/7/1979
+equestrian,Laura Graves,W,5-8,120,7/22/1987
+equestrian,Kasey Perry-Glass,W,,130,10/12/1987
+fencing,Jason Pryor,M,,,
+fencing,Katharine Holmes,W,5-11,175,7/15/1993
+fencing,Courtney Hurley,W,5-9,150,9/30/1990
+fencing,Kelley Hurley,W,5-9,165,4/4/1988
+fencing,Miles Chamley-Watson,M,6-3,175,12/3/1989
+fencing,Alexander Massialas,M,6-2,170,4/20/1994
+fencing,Gerek Meinhardt,M,6-0,170,7/27/1990
+fencing,Lee Kiefer,W,5-4,107,6/15/1994
+fencing,Nzingha Prescod,W,5-4,139,8/14/1992
+fencing,Eli Dershwitz,M,6-1,165,9/23/1995
+fencing,Daryl Homer,M,5-8,165,7/16/1990
+fencing,Ibtihaj Muhammad,W,5-7,150,12/4/1985
+fencing,Dagmara Wozniak,W,5-8,180,7/1/1988
+fencing,Mariel Zagunis,W,5-8,160,3/3/1985
+field hockey,Katie Bam,W,5-1,120,12/6/1998
+field hockey,Jackie Briggs,W,5-6,140,5/23/1988
+field hockey,Lauren Crandall,W,5-3,130,3/27/1985
+field hockey,Rachel Dawson,W,5-10,150,8/2/1985
+field hockey,Katelyn Falgowski,W,5-6,141,10/23/1988
+field hockey,Stefanie Fee,W,5-6,140,3/11/1990
+field hockey,Melissa Gonzalez,W,5-3,130,1/24/1989
+field hockey,Michelle Kasold,W,5-3,118,5/26/1987
+field hockey,Kelsey Kolojejchick,W,5-3,145,10/2/1991
+field hockey,Alyssa Manley,W,5-2,,5/27/1994
+field hockey,Julia Reinprecht,W,5-3,127,7/12/1991
+field hockey,Katie Reinprecht,W,5-4,128,11/1/1989
+field hockey,Kat Sharkey,W,5-4,128,4/30/1990
+field hockey,Caitlin Van Sickle,W,5-5,130,1/26/1990
+field hockey,Michelle Vittese,W,5-3,128,12/6/1989
+field hockey,Jill Witmer,W,5-2,116,10/1/1991
+golf,Rickie Fowler,M,5-9,150,12/13/1988
+golf,Matt Kuchar,M,6-4,190,6/21/1978
+golf,Patrick Reed,M,6-0,200,8/5/1990
+golf,Bubba Watson,M,6-3,180,11/5/1978
+golf,Stacy Lewis,W,,133,2/16/1985
+golf,Gerina Piller,W,5-7,142,3/29/1985
+golf,Lexi Thompson,W,5-11,160,2/10/1995
+gymnastics,Chris Brooks,M,5-8,165,12/19/1986
+gymnastics,Jake Dalton,M,5-5,150,8/19/1991
+gymnastics,Danell Leyva,M,5-7,150,10/30/1991
+gymnastics,Sam Mikulak,M,5-5,140,10/13/1992
+gymnastics,Alex Naddour,M,5-7,155,3/4/1991
+gymnastics,Simone Biles,W,4-8,105,3/14/1997
+gymnastics,Gabby Douglas,W,5-2,110,12/31/1995
+gymnastics,,W,5-0,107,6/9/2000
+gymnastics,Madison Kocian,W,5-2,102,6/15/1997
+gymnastics,Aly Raisman,W,5-2,115,5/25/1994
+gymnastics,Kiana Eide,M,5-3,118,9/25/1998
+gymnastics,Alisa Kano,M,5-4,105,11/7/1994
+gymnastics,Natalie McGiffert,M,5-3,97,3/14/1997
+gymnastics,Monica Rokhman,M,5-8,123,5/27/1997
+gymnastics,Kristen Shaldybin,M,5-9,125,8/8/1997
+gymnastics,Laura Zeng,M,5-3,95,10/14/1999
+gymnastics,Logan Dooley,W,5-9,130,9/26/1987
+gymnastics,Nicole Ahsinger,W,5-4,128,5/12/1998
+judo,Colton Brown,M,6-0,200,10/8/1991
+judo,Nick Delpopolo,M,5-8,170,2/8/1989
+judo,Travis Stevens,M,5-11,178,2/28/1986
+judo,AngelicaDelgado,W,5-3,115,12/14/1990
+judo,Kayla Harrison,W,5-8,165,7/2/1990
+judo,Marti Malloy,W,5-3,130,6/23/1986
+modern pentathlon,Nathan Schrimsher,M,6-2,174,5/22/1992
+modern pentathlon,Isabella Isaksen,W,5-8,139,11/22/1993
+modern pentathlon,Margaux Isaksen,W,5-10,134,10/7/1991
+rowing,Andrew Campbell, Jr.,M,5-10,155,2/2/1992
+rowing,Charlie Cole,M,6-4,200,6/21/186
+rowing,Mike DiSanto,M,,200,12/10/1989
+rowing,Sam Dommer,M,6-2,202,9/4/1991
+rowing,Anthony Fahden,M,5-11,158,2/27/1986
+rowing,Nareg Guregian,M,6-5,215,1/20/1989
+rowing,Austin Hack,M,6-8,220,5/17/1992
+rowing,Alex Karwoski,M,6-4,200,9/16/1990
+rowing,Steve Kasprzyk,M,6-7,229,2/14/1982
+rowing,Edward King,M,6-4,170,6/14/1989
+rowing,Joshua Konieczny,M,5-11,165,5/26/1991
+rowing,Matt Miller,M,6-5,217,1/13/1989
+rowing,Rob Munn,M,6-4,215,7/26/1990
+rowing,Tyler Nase,M,6-0,157,8/30/1990
+rowing,Glenn Ochal,M,6-4,210,3/1/1986
+rowing,Sam Ojserkis,M,5-8,122,3/24/1990
+rowing,Robin Prendes,M,6-1,160,12/13/1988
+rowing,Henrik Rummel,M,6-5,215,9/26/1987
+rowing,Hans Struzyna,M,6-2,200,3/31/1989
+rowing,Seth Weil,M,6-6,215,3/9/1987
+rowing,Anders Weiss,M,,205,11/5/1992
+rowing,Kate Bertko,W,5-9,128,11/8/1983
+rowing,Tracy Eisser,W,6-1,185,11/20/1989
+rowing,Amanda Elmore,W,5-11,175,3/13/1991
+rowing,Tessa Gobbo,W,6-1,180,12/8/1990
+rowing,Megan Kalmoe,W,5-10,160,8/21/1983
+rowing,Devery Karz,W,5-8,130,2/18/1988
+rowing,Grace Latz,W,6-0,175,2/21/1988
+rowing,Eleanor Logan,W,6-2,190,12/27/1987
+rowing,Grace Luczak,W,6-3,170,5/24/1989
+rowing,Adrienne Martelli,W,6-1,170,12/3/1987
+rowing,Felice Mueller,W,6-1,160,10/15/1989
+rowing,Meghan Musnicki,W,6-0,163,2/5/1983
+rowing,Meghan O'Leary,W,6-0,162,8/24/1984
+rowing,Amanda Polk,W,5-11,185,8/2/1986
+rowing,Emily Regan,W,6-2,178,6/10/1988
+rowing,Lauren Schmetterling,W,5-11,170,8/3/1988
+rowing,Kerry Simmonds,W,6-0,180,4/3/1989
+rowing,Katelin Snyder,W,5-4,110,8/16/1987
+rowing,Gevvie Stone,W,6-0,157,7/11/1985
+rowing,Ellen Tomek,W,,160,5/1/1984
+rugby,Perry Baker,M,6-1,180,6/29/1986
+rugby,Danny Barrett,M,6-2,225,3/23/1990
+rugby,Garrett Bender,M,6-4,230,12/2/1991
+rugby,Andrew Durutalo,M,6-2,236,10/25/1987
+rugby,Nate Ebner,M,6-1,215,12/14/1988
+rugby,Madison Hughes,M,5-8,175,10/26/1992
+rugby,Carlin Isles,M,5-8,165,11/21/1989
+rugby,Folau Niua,M,6-0,196,1/27/1985
+rugby,Ben Pinkelman,M,6-4,220,6/13/1994
+rugby,Zack Test,M,6-3,205,10/13/1989
+rugby,Maka Unufe,M,6-2,205,9/28/1991
+rugby,Chris Wyles,M,6-0,210,9/13/1983
+rugby,Bui Baravilala,W,5-6,165,7/12/1991
+rugby,Ryan Carlyle,W,5-6,145,11/24/1989
+rugby,Lauren Doyle,W,5-6,150,2/23/1991
+rugby,Nana Fa'avesi,W,5-6,161,2/5/1992
+rugby,Carmen Farmer,W,6-1,180,12/4/1980
+rugby,Victoria Folayan,W,5-5,160,5/27/1985
+rugby,Kelly Griffin,W,5-4,150,11/7/1986
+rugby,Jessica Javelet,W,5-6,140,6/25/1985
+rugby,Kathryn Johnson,W,5-10,153,10/25/1991
+rugby,Alev Kelter,W,5-6,165,3/21/1991
+rugby,Jillion Potter,W,5-10,175,7/5/1986
+rugby,Richelle Stephen,W,5-6,145,7/22/1996
+sailing,Thomas Barrows III,M,6-1,181,11/2/1987
+sailing,Charlie Buckingham,M,6-2,180,1/16/1989
+sailing,Bora Gulari,M,5-11,165,10/22/1975
+sailing,D,M,6-1,157,1/22/1978
+sailing,Stu McNay,M,5-7,145,8/1/1981
+sailing,Joe Morris,M,5-10,176,8/17/1989
+sailing,Caleb Paine,M,6-3,215,11/15/1990
+sailing,Pedro Pascual,M,6-1,154,3/15/1996
+sailing,Louisa Chafee,W,5-5,125,9/24/1991
+sailing,Annie Haeger,W,5-6,128,2/5/1990
+sailing,Paris Henken,W,5-6,140,12/22/1995
+sailing,Marion Lepert,W,5-10,135,9/18/1995
+sailing,Briana Provancha,W,5-7,147,4/25/1989
+sailing,Paige Railey,W,5-8,147,5/15/1987
+sailing,Helena Scutt,W,5-7,145,6/15/92
+shooting,Will Brown,M,5-7,135,12/31/1991
+shooting,Emil Milev,M,5-10,185,5/2/1968
+shooting,Keith Sanderson,M,6-0,210,2/2/1975
+shooting,Jay Shi,M,5-8,135,2/23/1979
+shooting,Lydia Paterson ,W,5-4,153,10/17/1996
+shooting,Enkelejda Shehaj,W,5-4,126,1/23/1969
+shooting,Matt Emmons,M,5-9,185,4/5/1981
+shooting,David Higgins,M,5-9,150,6/27/1994
+shooting,Lucas Kozeniesky,M,5-11,175,5/31/1995
+shooting,Dan Lowe,M,6-0,180,11/18/1992
+shooting,Michael McPhail,M,6-0,195,12/15/81
+shooting,Sarah Scherer,W,5-7,137,2/12/1991
+shooting,Virginia Thrasher,W,5-1,120,2/28/1997
+shooting,Glenn Eller,M,6-2,180,1/6/1982
+shooting,Vincent Hancock,M,5-8,175,3/19/1989
+shooting,Josh Richmond,M,6-2,200,12/19/1985
+shooting,Frank Thompson,M,5-11,175,3/11/1988
+shooting,Morgan Craft,W,5-3,140,5/11/1993
+shooting,Corey Cogdell-Unrein,W,5-8,155,9/2/1986
+shooting,Kim Rhode,W,5-4,180,7/16/1979
+soccer,Morgan Brian,W,5-7,127,2/26/1993
+soccer,Crystal Dunn,W,5-2,123,7/3/1992
+soccer,Whitney Engen,W,5-7,143,11/28/1987
+soccer,Tobin Heath,W,5-6,130,5/29/1988
+soccer,Lindsey Horan,W,5-9,165,5/26/1994
+soccer,Julie Johnston,W,5-7,144,4/6/1992
+soccer,Meghan Klingenberg,W,5-2,122,8/2/1988
+soccer,Ali Krieger,W,5-6,138,7/28/1984
+soccer,Carli Lloyd,W,5-7,140,7/16/1982
+soccer,Allie Long,W,5-8,140,8/13/1987
+soccer,Alex Morgan,W,5-8,137,7/2/1989
+soccer,Alyssa Naeher,W,5-9,152,4/20/1988
+soccer,Kelley O'Hara,W,5-5,127,8/4/1988
+soccer,Christen Press,W,5-6,135,12/29/1988
+soccer,Mallory Pugh,W,5-4,120,4/29/1998
+soccer,Megan Rapinoe,W,5-6,133,7/5/1985
+soccer,Becky Sauerbrunn,W,5-7,140,6/6/1985
+soccer,Hope Solo,W,5-9,148,7/30/1981
+swimming,Sean Ryan,M,6-3,170,8/13/1992
+swimming,Jordan Wilimovsky,M,5-9,150,4/22/1994
+swimming,Haley Anderson,W,5-10,150 ,11/20/1991
+swimming,Nathan Adrian,M,6-6,225,12/7/1988
+swimming,Gunnar Bentz,M,,185,1/3/1996
+swimming,Jack Conger,M,6-4,175,9/26/1994
+swimming,Kevin Cordes,M,6-5,193,8/13/1993
+swimming,Caeleb Dressel,M,6-3,190,8/16/1996
+swimming,Conor Dwyer,M,6-5,195,1/10/1989
+swimming,Anthony Ervin,M,6-3,177,5/26/1981
+swimming,Jimmy Feigen,M,6-5,215,9/26/1989
+swimming,Townley Haas,M,6-5,185,12/13/1996
+swimming,Ryan Held,M,,,2/29/1984
+swimming,Connor Jaeger,M,6-1,170,4/30/1991
+swimming,Chase Kalisz,M,,190,3/7/1994
+swimming,Jay Litherland,M,6-0,175,8/24/1995
+swimming,Ryan Lochte,M,6-2,195,8/3/1984
+swimming,Cody Miller,M,5-11,175,1/9/1992
+swimming,Ryan Murphy,M,6-3,200,7/2/1995
+swimming,Jacob Pebley,M,6-4,190,9/17/1993
+swimming,Michael Phelps,M,6-4,200,6/30/1985
+swimming,Blake Pieroni,M,6-2,190,11/15/1995
+swimming,David Plummer,M,,210,10/9/1985
+swimming,Josh Prenot,M,5-11,167,7/28/1993
+swimming,Tom Shields,M,6-4,190,7/11/1991
+swimming,Clark Smith,M,6-9,198,4/17/1995
+swimming,Jordan Wilimovsky,M,5-10,150,4/22/1994
+swimming,Cammile Adams,W,5-8,143,9/11/1991
+swimming,Kathleen Baker,W,5-8,149,2/28/1997
+swimming,Elizabeth Beisel,W,5-6,146,8/18/1992
+swimming,Maya DiRado,W,5-9,143,4/5/1993
+swimming,Hali Flickinger,W,5-5,115,7/7/1994
+swimming,Missy Franklin,W,6-2,170,5/10/1995
+swimming,Molly Hannis,W,5-6,155,3/13/1992
+swimming,Lilly King,W,5-9,155,2/10/1997
+swimming,Katie Ledecky,W,6-0,160,3/17/1997
+swimming,Simone Manuel,W,5-10,160,8/2/1996
+swimming,MelanieMargalis,W,5-8,144,12/30/1991
+swimming,Katie Meili,W,5-7,135,4/16/1991
+swimming,Lia Neal,W,5-10,165,2/13/1995
+swimming,Cierra Runge,W,6-4,187,3/7/1996
+swimming,Allison Schmitt,W,6-1,165,6/7/1990
+swimming,Leah Smith,W,5-9,149,4/19/1995
+swimming,Olivia Smoliga,W,6-2,165,10/12/1994
+swimming,Dana Vollmer,W,6-1,150,11/13/1987
+swimming,Amanda Weir,W,6-2,170,3/11/1986
+swimming,AbbeyWeitzeil,W,5-10,150,12/3/1996
+swimming,Kelsi Worrell,W,5-11,165,7/15/1994
+synchronized swimming,Anita Alvarez,W,5-7,114,12/2/1996
+synchronized swimming,Mariya Koroleva,W,5-5,123,4/10/1990
+table tennis,Yijun Feng,M,6-1,,
+table tennis,Kanak Jha,M,5-5,114,6/19/2000
+table tennis,Timothy Wang,M,5-9,141,8/17/1991
+table tennis,Yue (Jennifer) Wu,W,,112,
+table tennis,Lily Zhang,W,5-5,130,6/16/1996
+table tennis,Jiaqi Zheng,W,5-5,94,1/31/1988
+taekwondo,Stephen Lambdin,M,6-2,240,3/9/1988
+taekwondo,Steven Lopez,M,6-3,185,11/9/1978
+taekwondo,Jackie Galloway,W,5-10,175,
+taekwondo,Paige McPherson,W,5-8,140,10/1/1990
+tennis,Brian Baker,M,,170,4/30/1985
+tennis,Bob Bryan,M,6-3,195,4/29/1978
+tennis,Mike Bryan,M,6-2,180,4/29/1978
+tennis,Steve Johnson,M,6-2,190,12/24/1989
+tennis,Denis Kudla,M,5-11,175,8/17/1992
+tennis,Jack Sock,M,,185,9/24/1992
+tennis,Madison Keys,W,5-10,150,2/17/1995
+tennis,Bethanie Mattek-Sands,W,5-6,145,3/23/1985
+tennis,Sloane Stephens,W,5-8,142,3/20/1993
+tennis,CoCo Vandeweghe,W,6-1,155,12/6/1991
+tennis,Serena Williams,W,5-10,160,9/26/1981
+tennis,Venus Williams,W,,165,6/17/1980
+track and field,,M,6-2,175,12/30/1993
+track and field,,M,6-1,185,12/12/1994
+track and field,,M,5-10,145,3/29/1991
+track and field,,M,6-2,208,7/2/1988
+track and field,,M,6-3,275,1/6/1992
+track and field,Chris Benard,M,6-3,185,4/9/1990
+track and field,,M,6-0,153,12/19/1992
+track and field,,M,5-10,140,12/15/1988
+track and field,,M,5-6,115,
+track and field,,M,5-9,171,12/15/1993
+track and field,Trayvon Bromill,M,5-8,156,7/10/1995
+track and field,Donn Cabral,M,5-10,150,12/12/1989
+track and field,Matthew Centrowitz,M,5-9,145,10/18/1989
+track and field,,M,5-9,125,10/27/1990
+track and field,Will Claye,M,5-11,160,6/13/1991
+track and field,Kerron Clement,M,6-2,190,10/31/1985
+track and field,Kyle Clemons,M,5-11,160,12/27/1990
+track and field,,M,5-9,159,3/6/1996
+track and field,,M,6-7,275,12/18/1992
+track and field,,M,6-6,230,12/31/1991
+track and field,,M,5-9,160,5/30/1991
+track and field,,M,6-4,175,11/17/1992
+track and field,Ashton Eaton,M,6-1,180,1/21/1988
+track and field,,M,6-6,250,1/25/1991
+track and field,,M,6-8,348,10/7/1990
+track and field,Sean Furey,M,6-2,200,8/31/1982
+track and field,Justin Gatlin,M,6-1,177,2/10/1982
+track and field,Tyson Gay,M,5-11,178,8/9/1982
+track and field,,M,6-0,165,2/12/1994
+track and field,Jeffrey Henderson,M,6-0,189,2/19/1989
+track and field,Darrell Hill,M,6-3,320,8/17/1993
+track and field,Cyrus Hostetler,M,6-2,210,8/8/1986
+track and field,Evan Jager,M,6-2,145,3/8/1989
+track and field,,M,6-3,164,11/23/1989
+track and field,Meb Keflezighi,M,5-5,125,5/5/1975
+track and field,,M,6-1,175,9/7/1992
+track and field,Shadrack Kipchirchir,M,5-8,118,2/22/1989
+track and field,,M,5-7,130,12/10/1986
+track and field,Joe Kovacs,M,6-0,295,6/28/1989
+track and field,Erik Kynard,M,6-4,198,2/3/1991
+track and field,Bernard Lagat,M,5-8,130,12/12/1974
+track and field,,M,6-2,172,5/6/1994
+track and field,Tony McQuay,M,5-11,160,4/16/1990
+track and field,,M,6-2,145,6/28/1991
+track and field,LaShawn Merritt,M,6-3,190,6/27/1986
+track and field,Clayton Murphy,M,5-11,150,2/26/1995
+track and field,John Nunn,M,6-2,172,2/3/1978
+track and field,Jeff Porter,M,6-0,190,11/27/1985
+track and field,,M,6-2,180,3/15/1989
+track and field,,M,5-11,165,9/19/1990
+track and field,,M,5-9,165,5/10/1995
+track and field,,M,5-9,178,4/24/1985
+track and field,Galen Rupp,M,5-11,135,5/8/1986
+track and field,,M,6-0,145,2/5/1991
+track and field,,M,6-4,200,1/15/1990
+track and field,Michael Tinsley,M,6-1,165,4/21/1984
+track and field,Christian Taylor,M,6-2,180,6/18/1990
+track and field,,M,5-8,155,5/14/1991
+track and field,,M,5-10,145,9/9/1988
+track and field,,M,5-11,180,3/19/991
+track and field,,M,6-4,195,2/23/1993
+track and field,Morolake Akinosun,W,5-4,133,5/17/1994
+track and field,,W,5-6,143,10/23/1988
+track and field,,W,5-9,200,2/18/1989
+track and field,Tianna Bartoletta,W,5-6,130,8/30/1985
+track and field,,W,5-9,195,6/29/1989
+track and field,Brittany Borman,W,6-0,170,7/1/1989
+track and field,Tori Bowie,W,5-9,128,8/27/1990
+track and field,Amber Campbell,W,5-7,200,6/5/1981
+track and field,Kelsey Card,W,5-10,255,8/20/1992
+track and field,Michelle Carter,W,5-9,300,10/12/1985
+track and field,,W,5-7,133,7/7/1988
+track and field,Emma Coburn,W,5-8,120,10/19/1990
+track and field,Kim Conley,W,5-3,110,3/14/1986
+track and field,Amy Cragg-Hastings,W,5-4,100,1/21/1984
+track and field,,W,6-1,123,1/18/1998
+track and field,,W,5-3,110,5/25/1992
+track and field,Janay DeLoach,W,5-5,128,10/12/1985
+track and field,,W,6-0,142,5/6/1993
+track and field,Christina Epps,W,5-9,145,6/20/1991
+track and field,Allyson Felix,W,5-6,125,11/18/1985
+track and field,Shalane Flanagan,W,5-5,105,7/8/1981
+track and field,,W,5-11,158,5/4/1992
+track and field,,W,5-7,118,1/18/1993
+track and field,English Gardner,W,5-6,120,4/22/1992
+track and field,,W,5-4,128,6/26/1991
+track and field,,W,5-8,122,10/24/1988
+track and field,,W,5-3,112,1/28/1992
+track and field,Natasha Hastings,W,5-8,150,7/23/1986
+track and field,,W,5-3,118,2/8/1993
+track and field,Molly Huddle,W,5-5,108,8/31/1984
+track and field,,W,5-4,110,3/21/1990
+track and field,,W,6-1,280,7/24/1989
+track and field,Desiree Linden,W,5-1,96,7/26/1983
+track and field,Chaunte Lowe,W,5-9,132,1/12/1984
+track and field,,W,5-8,170,12/30/1993
+track and field,,W,5-7,124,9/8/1987
+track and field,Francena McCorory,W,5-7,151,10/20/1988
+track and field,,W,5-9,132,8/7/1999
+track and field,,W,5-5,114,9/29/1986
+track and field,,W,5-2,110,3/20/1989
+track and field,Maria Michta-Coffey,W,5-5,110,6/23/1986
+track and field,Heather Miller-Koch,W,5-9,140,3/30/1987
+track and field,,W,5-8,137,7/8/1992
+track and field,,W,5-8,122,2/7/1990
+track and field,,W,5-9,146,1/18/1989
+track and field,,W,5-8,130,3/15/1994
+track and field,,W,5-5,135,3/5/1996
+track and field,,W,5-8,132,11/20/1992
+track and field,DeAnna Price,W,5-8,220,6/8/1993
+track and field,,W,5-9,135,11/20/1992
+track and field,Brittney Reese,W,5-8,136,9/9/1986
+track and field,,W,5-5,130,8/18/1991
+track and field,Shannon Rowbury,W,5-5,115,9/19/1984
+track and field,,W,5-5,240,5/15/1996
+track and field,Jenny Simpson,W,5-5,118,8/23/1986
+track and field,,W,5-10,130,6/8/1993
+track and field,,W,5-9,142,5/19/1995
+track and field,Jenn Suhr,W,6-0,145,2/5/1982
+track and field,,W,6-0,280,8/24/1994
+track and field,,W,5-9,135,8/27/1996
+track and field,,W,5-6,130,11/20/1996
+track and field,,W,5-3,120,3/31/1993
+track and field,,W,5-10,148,6/14/1995
+track and field,,W,5-8,135,5/8/1994
+track and field,Kara Winger,W,6-0,185,4/10/1986
+triathlon,Joe Maloy,M,5-9,142,12/20/1985
+triathlon,Greg Billington,M,5-9,145,5/30/1989
+triathlon,Ben Kanute,M,6-0,155,12/14/1992
+triathlon,Gwen Jorgensen,W,5-10,130,4/25/1986
+triathlon,Sarah True,W,5-7,133,11/27/1981
+triathlon,Katie Zaferes,W,5-8,,6/9/1989
+volleyball,Phil Dalhausser,M,6-9,205,1/26/1980
+volleyball,Jake Gibb,M,6-7,210,2/6/1976
+volleyball,Nick Lucena,M,6-1,185,9/22/1979
+volleyball,Casey Patterson,M,6-6,195,4/20/1980
+volleyball,Lauren Fendrick,W,6-1,166,3/20/1982
+volleyball,April Ross,W,6-1,165,6/20/1982
+volleyball,Brooke Sweat,W,5-8,154,3/27/1986
+volleyball,Kerri Walsh Jennings,W,6-3,160,8/15/1978
+volleyball,Matt Anderson,M,6-9,190,4/18/1987
+volleyball,Micah Christenson,M,6-6,190,5/8/1993
+volleyball,Max Holt,M,6-10,198,3/12/1987
+volleyball,Tom Jaeschke,M,6-6,200,9/4/1993
+volleyball,David Lee,M,6-8,230,3/8/1982
+volleyball,Reid Priddy,M,6-4,195,10/1/1977
+volleyball,Aaron Russell,M,6-9,205,6/4/1993
+volleyball,Taylor Sander,M,6-4,190,3/17/1992
+volleyball,Erik Shoji,M,6-0,165,8/24/1989
+volleyball,Kawika Shoji,M,6-3,194,11/11/1987
+volleyball,David Smith,M,6-8,200,5/15/1985
+volleyball,Murphy Troy,M,6-8,235,5/31/1989
+volleyball,Rachael Adams,W,6-2,178,6/3/1990
+volleyball,Foluke Akinradewo,W,6-3,170,10/5/1987
+volleyball,Kayla Banwarth,W,5-10,155,1/21/1989
+volleyball,Christa Dietzen,W,6-2,174,10/12/1986
+volleyball,Alisha Glass,W,6-0,158,4/5/1988
+volleyball,Kim Hill,W,6-4,159,11/30/1989
+volleyball,Jordan Larson,W,6-2,150,10/16/1986
+volleyball,Carli Lloyd,W,5-11,165,8/6/1989
+volleyball,Karsta Lowe,W,6-4,180,2/2/1993
+volleyball,Kelly Murphy,W,6-2,170,10/20/1989
+volleyball,Kelsey Robinson,W,6-2,155,6/25/1992
+volleyball,Courtney Thompson,W,5-8,145,11/4/1994
+water polo,Tony Azevedo,M,6-1,198,11/21/1981
+water polo,McQuin Baron,M,6-8,205,10/27/1995
+water polo,Bret Bonanni,M,6-4,205,1/20/1994
+water polo,Alex Bowen,M,6-5,220,9/4/1993
+water polo,Luca Cupido,M,6-4,210,11/9/1995
+water polo,Thomas Dunstan,M,6-4,200,9/29/1997
+water polo,Ben Hallock,M,6-6,235,11/22/1997
+water polo,John Mann,M,6-6,250,6/27/1985
+water polo,Merrill Moses,M,6-3,215,8/13/1977
+water polo,Alex Obert,M,6-6,233,12/18/1991
+water polo,Alex Roelse,M,6-7,255,1/10/1995
+water polo,Josh Samuels,M,6-4,210,7/8/1991
+water polo,Jesse Smith,M,6-4,233,4/27/1983
+water polo,KK Clark,W,6-2,160,6/28/1990
+water polo,Kami Craig,W,5-11,195,7/21/1987
+water polo,Rachel Fattal,W,5-8,145,12/10/1993
+water polo,Aria Fischer,W,6-0,173,3/2/1999
+water polo,Mackenzie Fischer,W,6-1,165,3/29/1997
+water polo,Kaleigh Gilchrist,W,5-9,170,5/16/1992
+water polo,Sami Hill,W,6-0,197,6/8/1992
+water polo,Ashleigh Johnson,W,6-1,180,9/12/1994
+water polo,Courtney Mathewson,W,5-7,154,9/14/1986
+water polo,Maddie Musselman,W,5-11,145,6/16/1998
+water polo,Kiley Neushul,W,5-8,145,3/5/1993
+water polo,Melissa Seidemann,W,6-0,230,6/26/1990
+water polo,Maggie Steffens,W,5-8,165 ,6/4/1993
+weightlifting,Kendrick Farris,M,5-6,207,7/2/1986
+weightlifting,Jenny Arthur,W,5-5,165,12/11/1993
+weightlifting,Morghan King,W,5-0,110,10/8/1985
+weightlifting,Sarah Robles,W,5-10,310,8/1/1988
+wrestling,Jordan Burroughs,M,5-7,175,7/8/1988
+wrestling,J'Den Cox,M,5-11,189,3/3/1995
+wrestling,Daniel Dennis,M,5-5,125,9/24/1986
+wrestling,Frank Molinaro,M,5-4,155,12/27/1988
+wrestling,Kyle Snyder,M,5-11,225,11/20/1995
+wrestling,Haley Augello,W,5-2,118,10/17/1994
+wrestling,Adeline Gray,W,5-8,170,1/15/1991
+wrestling,Helen Maroulis,W,,125,9/19/1991
+wrestling,Elena Pirozhkova,W,5-6,158,10/13/1986
+wrestling,Andy Bisek,M,5-10,180,8/18/1986
+wrestling,Tervel Dlagnev,M,6-2,270,11/19/1985
+wrestling,Ben Provisor,M,5-8,195,6/26/1990
+wrestling,Robby Smith,M,6-0,280,1/30/1987
+wrestling,Jesse Thielke,M,5-7,150,6/9/1992
