@@ -42,7 +42,7 @@ sports = [
 
 root_page = 'http://www.teamusa.org/Road-To-Rio-2016/Team-USA/'
 
-header = ['sport', 'name', 'gender', 'height', 'weight', 'dob']
+header = ['sport', 'name', 'gender', 'height', 'weight', 'dob', 'link', 'img']
 
 def content_from_tag(tag):
   while 'NavigableString' not in str(type(tag)):
@@ -57,6 +57,7 @@ with open('usa2016.csv', 'wb') as f:
 
   for sport in sports:
     current_page = root_page + urllib.quote(sport)
+    print("\n")
     print("Scraping %s" % current_page)
 
     # Open the page
@@ -118,6 +119,17 @@ with open('usa2016.csv', 'wb') as f:
       for data_row in rows[1:]:
         tds = data_row.findAll('td')
         name_td = tds[name_ix]
+
+        # some athletes are missing links
+        if name_td.a is None:
+          continue
+
+        link = name_td.a['href']
+
+        # some links are corrupt
+        if (link == 'http://') or ('/Athletes/UN/' in link):
+          continue
+
         name = content_from_tag(name_td.a)
 
         height_td = tds[height_ix]
@@ -129,6 +141,22 @@ with open('usa2016.csv', 'wb') as f:
         dob_td = tds[dob_ix]
         dob = content_from_tag(dob_td)
 
+        # visit bio page to get image link
+        if 'teamusa.org' not in link:
+          link = 'http://www.teamusa.org' + link
+        # one of the links has multiple protocols
+        link = link.replace('http://http://', 'http://')
+        print('Scraping ' + link)
+        biopage = urllib2.urlopen(link)
+
+        #Parse it
+        biosoup = BeautifulSoup(biopage.read())
+        biosoup.prettify()
+
+        div = biosoup.findAll("div", attrs={ "class" : "athlete athlete-hero olympic" })[0]
+        imgs = div.findAll('img')
+        img = 'http://www.teamusa.org' + imgs[0]['src']
+
         # write out data
-        my_writer.writerow([sport, name, gender, height, weight, dob])
+        my_writer.writerow([sport, name, gender, height, weight, dob, link, img])
 

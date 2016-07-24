@@ -6,7 +6,7 @@ library(stringr)
 
 # load data
 athletes = read.csv('data/usa2016_clean.csv', header=TRUE, as.is=TRUE)
-
+# athletes = read.csv('data/usa2016_with_images_clean.csv', header=TRUE, as.is=TRUE)
 
 # tranform height into inches
 athletes$height_feet = strtoi(str_split_fixed(athletes$height, '-', 2)[,1])
@@ -19,6 +19,14 @@ olympics_start = as.Date("8/5/2016", format="%m/%d/%Y")
 athletes$age = olympics_start - athletes$dob
 athletes$age = as.numeric(athletes$age, units="days")/365
 athletes$age = ifelse(athletes$age > 100, NA, athletes$age)
+
+# output data for shiny
+# athletes$height = athletes$height_converted
+# athletes$weight = as.numeric(athletes$weight)
+# want.cols = c('sport', 'name', 'height', 'weight', 'age', 'link', 'img')
+# want.rows = complete.cases(athletes[,want.cols])
+# athletes = athletes[want.rows, want.cols]
+# write.csv(athletes, file="data/athletes_shiny.csv", row.names=FALSE)
 
 # transform gender into 1/0
 athletes$female = ifelse(athletes$gender=="W", 1, 0)
