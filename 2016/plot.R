@@ -32,9 +32,9 @@ athletes$age = ifelse(athletes$age > 100, NA, athletes$age)
 athletes$female = ifelse(athletes$gender=="W", 1, 0)
 
 # subset into complete cases
-want.cols = c('sport', 'height_converted', 'weight', 'age', 'female')
+want.cols = c('name', 'sport', 'height_converted', 'weight', 'age', 'female')
 want.rows = complete.cases(athletes[,want.cols])
-dim(athletes) # 544 observations
+dim(athletes) # 554 observations
 athletes = athletes[want.rows, want.cols]
 dim(athletes) # 518 observations
 
@@ -44,6 +44,7 @@ athletes$symbol = NA
 sports = sort(unique(athletes$sport))
 colors = rep(brewer.pal(6,"Set1"),times=5)
 symbols = rep(c(21,22,23,24,25),each=6)
+symbols = rep(c(7,9,10,12,13), each=6)
 
 sports.colors.symbols = cbind(sports, colors[1:length(sports)], symbols[1:length(sports)])
 colnames(sports.colors.symbols) = c("sport", "color", "symbol")
@@ -95,6 +96,57 @@ legend("left",
 )
 dev.off()
 
+png("graphics/crossplot-male.png")
+crossPlot(male)
+dev.off()
+
+png("graphics/crossplot-female.png")
+crossPlot(female)
+dev.off()
+
+png("graphics/crossplot-legend.png")
+plot.new()
+legend("left",
+  legend = sports.colors.symbols[,'sport'],
+  col    = sports.colors.symbols[,'color'],
+  pch    = as.numeric(
+            sports.colors.symbols[,'symbol']
+          ),
+  cex=0.8
+)
+dev.off()
+
+
+
+png('graphics/combined-plot.png', width=480, height=960)
+par(mfrow=c(1,7)) 
+crossPlot(male)
+crossPlot(female)
+# plot.new()
+# legend("left",
+  # legend = sports.colors.symbols[,'sport'],
+  # col    = sports.colors.symbols[,'color'],
+  # pch    = as.numeric(
+            # sports.colors.symbols[,'symbol']
+          # ),
+  # cex=0.8
+# )
+dev.off()
+
+
+
 write.csv(athletes, file="data/athletes_mod.csv", row.names=FALSE)
+
+# min and max of each value
+athletes[which(athletes$height_converted==min(athletes$height_converted)), ]
+athletes[which(athletes$height_converted==max(athletes$height_converted)), ]
+
+athletes$weight = as.numeric(athletes$weight)
+summary(athletes$weight)
+athletes[which(athletes$weight==94), ]
+athletes[which(athletes$weight==348), ]
+
+athletes[which(athletes$age==min(athletes$age)), ]
+athletes[which(athletes$age==max(athletes$age)), ]
 
 
