@@ -1,0 +1,243 @@
+name,sport,height,weight,age,female
+Stacey Cook,TBD,64.0,160.0,33.0,True
+Tricia  Mangan,TBD,68.0,140.0,20.0,True
+Megan McJames,TBD,66.0,135.0,30.0,True
+Alice McKennis,TBD,66.0,158.0,28.0,True
+Alice Merryweather,TBD,68.0,150.0,28.0,True
+Laurenne Ross,TBD,67.0,150.0,29.0,True
+Mikaela Shiffrin,"Giant Slalom, Slalom",67.0,146.0,22.0,True
+Resi Stiegler,TBD,67.0,135.0,32.0,True
+Lindsey Vonn,Super-G,70.0,140.0,33.0,True
+Jacqueline Wiles,Will Not Compete,67.0,160.0,25.0,True
+Bryce Bennett,Alpine Combined,79.0,220.0,25.0,False
+Tommy Biesemeyer,Super-G,72.0,190.0,29.0,False
+David Chodounsky,Slalom,71.0,185.0,33.0,False
+Ryan Cochran-Siegle,Alpine Combined,73.0,200.0,25.0,False
+Mark Engel,TBD,69.0,175.0,26.0,False
+Tommy Ford,TBD,71.0,165.0,28.0,False
+Jared Goldberg,TBD,72.0,200.0,26.0,False
+Tim Jitloff,TBD,71.0,195.0,33.0,False
+Nolan Kasper,Slalom,68.0,180.0,28.0,False
+Ted Ligety,TBD,71.0,190.0,33.0,False
+Wiley Maple,TBD,74.0,220.0,27.0,False
+Steven Nyman,Will Not Compete,76.0,220.0,36.0,False
+Andrew Weibrecht,Super-G,67.0,190.0,32.0,False
+Emily Dreissigacker,TBD,69.0,150.0,29.0,True
+Susan Dunklee,TBD,67.0,143.0,32.0,True
+Clare Egan,TBD,68.0,125.0,30.0,True
+Maddie Phaneuf,TBD,64.0,140.0,22.0,True
+Joanne Reid,TBD,65.0,115.0,25.0,True
+Lowell Bailey,TBD,73.0,170.0,36.0,False
+Tim Burke,TBD,71.0,160.0,36.0,False
+Russell Currier,TBD,66.0,148.0,30.0,False
+Sean Doherty,TBD,72.0,168.0,22.0,False
+Leif Nordgren,TBD,74.0,175.0,28.0,False
+Aja Evans,Women's Two-Man/Push,70.0,170.0,29.0,True
+Lauren Gibbs,Women's Two-Man/Push,70.0,170.0,33.0,True
+Jamie Greubel Poser,Women's Two-Man/Pilot,69.0,162.0,34.0,True
+Elana Meyers Taylor,Women's Two-Man/Pilot,67.0,175.0,33.0,True
+Hakeem Abdul-Saboor,"Four-Man, Two-Man/Push",72.0,230.0,30.0,False
+Codie Bascue,"Four-Man, Two-Man/Pilot",69.0,208.0,23.0,False
+Nick Cunningham,"Four-Man, Two-Man/Pilot",71.0,210.0,32.0,False
+Chris Fogt,Four-Man/Push,72.0,205.0,34.0,False
+Chris Kinney,Four-Man/Push,74.0,217.0,29.0,False
+Steven Langton,Four-Man/Push,75.0,235.0,34.0,False
+Sam McGuffie,"Four-Man, Two-Man/Push",71.0,210.0,28.0,False
+Sam Michener,Four-Man/Push,69.0,207.0,30.0,False
+Justin Olsen,"Four-Man, Two-Man/Pilot",74.0,230.0,30.0,False
+Carlo Valdes,Four-Man/Push,74.0,230.0,28.0,False
+Nathan Weber,Four-Man/Push,74.0,225.0,31.0,False
+Evan Weinstock,"Four-Man, Two-Man/Push",76.0,215.0,26.0,False
+Sadie Bjornsen,TBD,69.0,145.0,28.0,True
+Rosie Brennan,TBD,66.0,150.0,29.0,True
+Sophie Caldwell,TBD,67.0,130.0,27.0,True
+Jessie Diggins,TBD,64.0,128.0,26.0,True
+Rosie Frankowski,TBD,62.0,112.0,26.0,True
+Annie Hart,TBD,67.0,138.0,25.0,True
+Kaitlynn Miller,TBD,67.0,130.0,26.0,True
+Caitlin Patterson,TBD,69.0,132.0,28.0,True
+Kikkan Randall,TBD,65.0,135.0,35.0,True
+Ida Sargent,TBD,64.0,125.0,30.0,True
+Liz Stephen,TBD,62.0,105.0,31.0,True
+Erik Bjornsen,TBD,73.0,175.0,26.0,False
+Patrick Caldwell,TBD,72.0,170.0,23.0,False
+Simi Hamilton,TBD,71.0,175.0,30.0,False
+Logan Hanneman,TBD,73.0,185.0,24.0,False
+Reese Hanneman,TBD,71.0,175.0,28.0,False
+Noah Hoffman,TBD,69.0,160.0,28.0,False
+Tyler Kornfield,TBD,74.0,190.0,27.0,False
+Andy Newell,TBD,70.0,157.0,34.0,False
+Scott Patterson,TBD,71.0,160.0,26.0,False
+Cory Christensen,Team Roth/Fifth,64.0,115.0,23.0,True
+Aileen Geving,Team Roth/Second,65.0,132.0,31.0,True
+Becca Hamilton,"Team Roth/Lead, Mixed Doubles",65.0,167.0,27.0,True
+Tabitha Peterson,Team Roth/Third,64.0,130.0,28.0,True
+Nina Roth,Team Roth/Skip,65.0,143.0,29.0,True
+Tyler George,Team Shuster/Third,72.0,170.0,35.0,False
+Matt Hamilton,"Team Shuster/Second, Mixed Doubles",74.0,215.0,28.0,False
+John Landsteiner,Team Shuster/Lead,70.0,180.0,27.0,False
+Joe Polo,Team Shuster/Fifth,69.0,195.0,35.0,False
+John Shuster,Team Shuster/Skip,72.0,200.0,35.0,False
+Karen Chen,Singles,60.0,105.0,18.0,True
+Madison Chock,Ice Dance,62.0,108.0,25.0,True
+Madison Hubbell,Ice Dance,68.0,150.0,26.0,True
+Mirai Nagasu,Singles,64.0,125.0,24.0,True
+Alexa Scimeca Knierim,Pairs,62.0,102.0,26.0,True
+Maia Shibutani,Ice Dance,63.0,112.0,23.0,True
+Bradie Tennell,Singles,66.0,122.0,20.0,True
+Evan Bates,Ice Dance,73.0,170.0,28.0,False
+Nathan Chen,Singles,66.0,135.0,18.0,False
+Zachary Donohue,Ice Dance,74.0,197.0,27.0,False
+Chris Knierim,Pairs,74.0,187.0,30.0,False
+Adam Rippon,Singles,67.0,145.0,28.0,False
+Alex Shibutani,Ice Dance,72.0,160.0,26.0,False
+Vincent Zhou,Singles,67.0,128.0,17.0,False
+Maddie Bowman,Halfpipe,61.0,138.0,24.0,True
+Ashley Caldwell,Aerials,67.0,135.0,24.0,True
+Caroline Claire,Slopestyle,68.0,155.0,18.0,True
+Annalisa Drew,Halfpipe,64.0,115.0,24.0,True
+Tess Johnson,Moguls,64.0,117.0,17.0,True
+Jaelin Kauf,Moguls,64.0,135.0,21.0,True
+Devin Logan,"Halfpipe, Slopestyle",69.0,185.0,24.0,True
+Keaton McCargo,Moguls,66.0,120.0,22.0,True
+Kiley McKinnon,Aerials,69.0,125.0,22.0,True
+Madison Olsen,Aerials,67.0,135.0,22.0,True
+Morgan Schild,Moguls,67.0,150.0,20.0,True
+Brita Sigourney,Halfpipe,67.0,125.0,28.0,True
+Darian Stevens,Slopestyle,61.0,130.0,21.0,True
+Maggie Voisin,Slopestyle,63.0,125.0,19.0,True
+Casey Andringa,Moguls,71.0,180.0,22.0,False
+Aaron Blunck,Halfpipe,72.0,165.0,21.0,False
+Mac Bohonnon,Aerials,68.0,145.0,22.0,False
+Alex Ferreira,Halfpipe,69.0,140.0,23.0,False
+Nick Goepper,Slopestyle,72.0,162.0,23.0,False
+Alex Hall,Slopestyle,76.0,180.0,19.0,False
+Gus Kenworthy,Slopestyle,70.0,175.0,26.0,False
+Jon Lillis,Aerials,66.0,130.0,23.0,False
+Eric Loughran,Aerials,70.0,165.0,22.0,False
+Troy Murphy,Moguls,71.0,165.0,25.0,False
+Emerson Smith,Moguls,73.0,168.0,21.0,False
+McRae Williams,Slopestyle,74.0,175.0,27.0,False
+Bradley Wilson,Moguls,70.0,165.0,25.0,False
+David Wise,Halfpipe,73.0,185.0,27.0,False
+Torin Yater-Wallace,Halfpipe,69.0,148.0,22.0,False
+Cayla Barnes,Defense,61.0,145.0,19.0,True
+Kacey Bellamy,Defense,67.0,145.0,30.0,True
+Hannah Brandt,Forward,66.0,150.0,24.0,True
+Dani Cameranesi,Forward,65.0,148.0,22.0,True
+Kendall Coyne,Forward,62.0,123.0,25.0,True
+Brianna Decker,Forward,64.0,150.0,26.0,True
+Meghan Duggan,Forward,70.0,164.0,30.0,True
+Kali Flanagan,Defense,64.0,142.0,22.0,True
+Nicole Hensley,Goalie,67.0,155.0,23.0,True
+Megan Keller,Defense,71.0,160.0,21.0,True
+Amanda Kessel,Forward,65.0,136.0,26.0,True
+Hilary Knight,Forward,71.0,175.0,28.0,True
+Jocelyne Lamoureux-Davidson,Forward,66.0,150.0,28.0,True
+Monique Lamoureux-Morando,Forward,66.0,147.0,28.0,True
+Gigi Marvin,Forward,68.0,159.0,30.0,True
+Sidney Morin,Defense,65.0,140.0,22.0,True
+Kelly Pannek,Forward,68.0,165.0,22.0,True
+Amanda Pelkey,Forward,63.0,135.0,24.0,True
+Emily Pfalzer,Defense,63.0,125.0,24.0,True
+Alex Rigsby,Goalie,67.0,150.0,26.0,True
+Maddie Rooney,Goalie,65.0,145.0,20.0,True
+Haley Skarupa,Forward,66.0,140.0,24.0,True
+Lee Stecklein,Defense,72.0,175.0,23.0,True
+Mark Arcobello,Forward,68.0,170.0,29.0,False
+Chad Billins,Defense,70.0,185.0,28.0,False
+Jonathan Blum,Defense,73.0,195.0,29.0,False
+Will Borgen,Defense,74.0,195.0,21.0,False
+Chris Bourque,Forward,68.0,180.0,32.0,False
+Bobby Butler,Forward,72.0,189.0,30.0,False
+Ryan Donato,Forward,73.0,196.0,21.0,False
+Matt Gilroy,Defense,73.0,200.0,33.0,False
+Brian Gionta,Forward,67.0,175.0,39.0,False
+Jordan Greenway,Forward,77.0,235.0,20.0,False
+Ryan Gunderson,Defense,69.0,170.0,32.0,False
+Chad Kolarik,Forward,71.0,185.0,32.0,False
+David Leggio,Goalie,72.0,185.0,33.0,False
+Broc Little,Forward,69.0,170.0,29.0,False
+Brandon Maxwell,Goalie,73.0,196.0,26.0,False
+John McCarthy,Forward,73.0,195.0,31.0,False
+Brian O'Neill,Forward,69.0,174.0,29.0,False
+Garrett Roe,Forward,69.0,178.0,29.0,False
+Bobby Sanguinetti,Defense,74.0,190.0,29.0,False
+Jim Slater,Forward,72.0,200.0,35.0,False
+Ryan Stoa,Forward,75.0,210.0,30.0,False
+Troy Terry,Forward,72.0,179.0,20.0,False
+Noah Welch,Defense,76.0,215.0,35.0,False
+James Wisniewski,Defense,72.0,205.0,33.0,False
+Ryan Zapolski,Goalie,72.0,203.0,31.0,False
+Summer Britcher,Singles,70.0,170.0,23.0,True
+Erin Hamlin,Singles,67.0,156.0,31.0,True
+Emily Sweeney,Singles,65.0,148.0,24.0,True
+Justin Krewson,Doubles,74.0,175.0,21.0,False
+Chris Mazdzer,Singles,73.0,215.0,29.0,False
+Taylor Morris,Singles,71.0,188.0,26.0,False
+Matt Mortensen,Doubles,72.0,192.0,32.0,False
+Andrew Sherk,Doubles,68.0,160.0,25.0,False
+Jayson Terdiman,Doubles,67.0,160.0,29.0,False
+Tucker West,Singles,73.0,195.0,22.0,False
+Ben Berend,TBD,69.0,145.0,22.0,False
+Taylor Fletcher,TBD,72.0,155.0,27.0,False
+Bryan Fletcher,TBD,69.0,140.0,31.0,False
+Jasper Good,TBD,74.0,163.0,21.0,False
+Ben Loomis,TBD,73.0,160.0,19.0,False
+Katie Uhlaender,Women's Individual,64.0,147.0,33.0,True
+Kendall Wesenberg,Women's Individual,68.0,152.0,27.0,True
+Matt Antoine,Men's Individual,75.0,185.0,32.0,False
+John Daly,Men's Individual,69.0,175.0,32.0,False
+Nita Englund,Individual Normal Hill,67.0,115.0,25.0,True
+Sarah Hendrickson,Individual Normal Hill,64.0,103.0,23.0,True
+Abby Ringquist,Individual Normal Hill,68.0,132.0,28.0,True
+Kevin Bickner,TBD,72.0,138.0,21.0,False
+Michael Glasder,TBD,72.0,150.0,28.0,False
+Casey Larson,TBD,70.0,142.0,19.0,False
+Will Rhoads,TBD,74.0,153.0,22.0,False
+Jamie Anderson,"Slopestyle, Big Air",62.0,133.0,27.0,True
+Kelly Clark,Halfpipe,64.0,135.0,34.0,True
+Arielle Gold,Halfpipe,64.0,145.0,21.0,True
+Faye Gulini,Snowboardcross,64.0,123.0,25.0,True
+Lindsey Jacobellis,Snowboardcross,67.0,138.0,32.0,True
+Jessika Jenson,"Slopestyle, Big Air",65.0,127.0,36.0,True
+Chloe Kim,Halfpipe,63.0,115.0,17.0,True
+Hailey Langland,"Slopestyle, Big Air",62.0,110.0,17.0,True
+Rosie Mancari,Snowboardcross,68.0,170.0,24.0,True
+Julia Marino,"Slopestyle, Big Air",65.0,125.0,20.0,True
+Maddie Mastro,Halfpipe,64.0,110.0,17.0,True
+Meghan Tierney,Snowboardcross,69.0,130.0,21.0,True
+Nick Baumgartner,Snowboardcross,72.0,210.0,36.0,False
+Jonathan Cheever,Snowboardcross,70.0,190.0,32.0,False
+Chris Corning,"Slopestyle, Big Air",68.0,165.0,18.0,False
+Mick Dierdorff,Snowboardcross,69.0,185.0,26.0,False
+Ben Ferguson,Halfpipe,69.0,165.0,23.0,False
+Red Gerard,"Slopestyle, Big Air",65.0,116.0,17.0,False
+Chase Josey,Halfpipe,71.0,155.0,22.0,False
+Hagen Kearney,Snowboardcross,74.0,175.0,26.0,False
+Kyle Mack,"Slopestyle, Big Air",71.0,170.0,20.0,False
+AJ Muss,Parallel Giant Slalom,73.0,220.0,23.0,False
+Jake Pates,Halfpipe,67.0,150.0,19.0,False
+Ryan Stassel,"Slopestyle, Big Air",71.0,170.0,25.0,False
+Mike Trapp,Parallel Giant Slalom,68.0,145.0,29.0,False
+Shaun White,Halfpipe,69.0,154.0,31.0,False
+Heather Bergsma,"500, 1,000, 1,500, Mass Start, Team Pursuit",71.0,160.0,28.0,True
+Brittany Bowe,"500, 1,000, 1,500, Team Pursuit",67.0,140.0,29.0,True
+Mia Manganello,"1,500, Mass Start, Team Pursuit",67.0,140.0,28.0,True
+Carlijn Schoutens,"3,000, 5,000, Team Pursuit",69.0,153.0,23.0,True
+Jerica Tandiman,"1,000",63.0,138.0,23.0,True
+Shani Davis,"1,000, 1,500",74.0,185.0,35.0,False
+Jonathan Garcia,"500, Team Pursuit",67.0,150.0,31.0,False
+Kimani Griffin,500,73.0,178.0,27.0,False
+Brian Hansen,"1,500, Mass Start, Team Pursuit",72.0,180.0,27.0,False
+Emery Lehman,"5,000, Team Pursuit",72.0,183.0,21.0,False
+Joey Mantia,"1,000, 1,500, Mass Start, Team Pursuit",68.0,170.0,32.0,False
+Mitch Whitmore,"500, 1,000",70.0,170.0,28.0,False
+Maame Biney,"500, 1,500",66.0,150.0,18.0,True
+Lana Gehring,"500, 1,000, 1,500",69.0,135.0,27.0,True
+Jessica Kooreman,"1,000, 1,500",60.0,118.0,34.0,True
+J.R. Celski,"1,000, 1,500, 5,000 Relay",68.0,143.0,27.0,False
+Thomas Hong,"500, 5,000 Relay",68.0,140.0,20.0,False
+John-Henry Krueger,"500, 1,000, 1,500, 5,000 Relay",70.0,165.0,22.0,False
+Ryan Pivirotto,"5,000 Relay",65.0,137.0,22.0,False
+Aaron Tran,"500, 1,500, 5,000 Relay",67.0,160.0,21.0,False
